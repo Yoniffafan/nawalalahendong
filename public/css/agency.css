@@ -7,6 +7,34 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.scrollToTop {
+    color: #fff;
+    background: #00d999 none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 60px;
+    display: block;
+    font-size: 25px;
+    height: 55px;
+    line-height: 50px;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    width: 55px;
+    z-index: 999;
+}
+
+.scrollToTop:hover, .scrollToTop:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.scrollToTop:hover {
+    background-color: #00f999;
+}
+
 .text-muted {
   color: #777777;
 }
