@@ -12,6 +12,15 @@
         event.preventDefault();
     });
 
+    //fab jQuery
+
+           $('a.back-to-top').click(function() {
+       	$('html, body').animate({
+       		scrollTop: 0
+       	}, 700);
+       	return false;
+       });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -19,7 +28,7 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
 
@@ -29,5 +38,7 @@
             top: 100
         }
     })
+
+
 
 })(jQuery); // End of use strict
